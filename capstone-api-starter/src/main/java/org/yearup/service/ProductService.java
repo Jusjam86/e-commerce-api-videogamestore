@@ -26,8 +26,7 @@ public class ProductService
                        .filter(p -> minPrice == null || p.getPrice() >= minPrice)
                        .filter(p -> maxPrice == null || p.getPrice() <= maxPrice)
                        .filter(p -> subCategory == null || subCategory.equalsIgnoreCase(p.getSubCategory()))
-                       .filter(Product::isFeatured)
-                       .toList();
+                       .toList(); // Bug fix 1: removed .filter(Product::isFeatured)
     }
 
     public List<Product> listByCategoryId(int categoryId)
@@ -56,6 +55,7 @@ public class ProductService
         existing.setSubCategory(product.getSubCategory());
         existing.setFeatured(product.isFeatured());
         existing.setImageUrl(product.getImageUrl());
+        existing.setStock(product.getStock()); // <- Bug fix 2: added this line
         return productRepository.save(existing);
     }
 
