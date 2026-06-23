@@ -28,7 +28,7 @@ public class Category
         this.description = description;
     }
 
-    public int getCategoryId()
+    public int getCategoryId() // ← has (int i) parameter, should have none
     {
         return categoryId;
     }
