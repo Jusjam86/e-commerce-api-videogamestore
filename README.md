@@ -14,12 +14,19 @@ I went through each phase numerically and successfully tested each of them
 - Add items to your cart
 - Modify the quantity
 - Remove all items from the cart with the click of a button
+<img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/ebbc58b4-9987-45db-b1ad-4a40020c4a79" />
+
+
 ## Login (User Profile and Registration)
 - Secure user sign up using hashed passwords
 - Add profile information on the web page
+<img width="1912" height="943" alt="image" src="https://github.com/user-attachments/assets/d52093c6-0856-40b2-bd52-12bf08dc2631" />
+<img width="1919" height="942" alt="image" src="https://github.com/user-attachments/assets/ec72fefc-f17e-43d5-a886-d5e2516b2167" />
+
+
 # Screenshots
 ## WebPage
-<img width="1912" height="908" alt="image" src="https://github.com/user-attachments/assets/d788132e-c754-4ead-8b53-d0bc28b88e9d" />
+<img width="1913" height="944" alt="image" src="https://github.com/user-attachments/assets/4157e9b4-b2c1-464f-9933-3d579fd9d307" />
 
 ## Program running in the background
 <img width="1910" height="1030" alt="image" src="https://github.com/user-attachments/assets/ea81d60b-82bf-48e6-90eb-bb68ec6e833f" />
