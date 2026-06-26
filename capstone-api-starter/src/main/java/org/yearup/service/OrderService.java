@@ -4,7 +4,8 @@ import org.springframework.stereotype.Service;
 import org.yearup.models.*;
 import org.yearup.repository.OrderLineItemRepository;
 import org.yearup.repository.OrderRepository;
-
+import org.springframework.http.HttpStatus;
+import org.springframework.web.server.ResponseStatusException;
 import java.time.LocalDateTime;
 import java.util.Map;
 
@@ -31,6 +32,10 @@ public class OrderService
     {
         // get the user's cart
         ShoppingCart cart = shoppingCartService.getByUserId(userId);
+
+        // return 400 if cart is empty
+        if (cart.getItems().isEmpty())
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Cannot checkout with an empty cart");
 
         // get the user's profile for address info
         Profile profile = profileService.getByUserId(userId);
